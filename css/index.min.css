@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-position: center -200px;
+}
+div {
+	display: flex;
+	justify-content: center;
+}
+ul {
+	position: absolute;
+	top:520px;
+}
+li {
+	list-style-type:none;
+	display: inline;
+}
+img {
+	margin: 0px 20px
+}
