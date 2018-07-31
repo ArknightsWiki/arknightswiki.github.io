@@ -8,6 +8,31 @@ div {
 	display: flex;
 	justify-content: center;
 }
+font{
+	position: absolute;
+	top:200px;
+	font-family: "Microsoft YaHei";
+	font-weight: bold;
+	font-size: 100px;
+	color: #1C1C1C;
+	opacity: 0.9;
+	visibility: hidden;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count:infinite; /*Safari and Chrome*/
+}
+@keyframes fade
+{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+@-webkit-ketframes fade  /* Safari and Chrome */ {
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
 ul {
 	position: absolute;
 	top:520px;
