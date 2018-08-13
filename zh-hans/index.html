@@ -8,8 +8,27 @@
 <meta property="og:description" content="明日方舟攻略站" />
 <meta property="og:description" content="Arknights攻略站" />
 <link href="../css/zh-hans.min.css" rel="stylesheet" type="text/css" />
-<script src="../js/zh-hans.min.js" type="text/javascript"></script>
+<style type="text/css">
+</style>
+<script src="../js/zh-hans.min.js"></script>
+<script src="../js/jquery-1.4.2.min.js"></script>
 <script>
+window.onload=function(){
+var ocontent=document.getElementById("content");
+var oli=ocontent.getElementsByTagName("li");
+var odiv=ocontent.getElementsByTagName("div");
+ 
+for(var i=0;i<oli.length;i++){
+oli[i].index=i;
+oli[i].onclick=function(){
+for(var n=0;n<oli.length;n++){
+odiv[n].className="hide";
+}
+odiv[this.index].className="";
+ 
+}
+}
+}
 </script>
 <title>首页-明日方舟Wiki</title>
 </head>
@@ -19,32 +38,84 @@
 		<img class="logo" src="../assets/images/logo-game.png">
 		<ul>
 			<li><a href="index.html">首页</a></li>
-			<li class="list"><a ref="年表.html">年表</a></li>
-			<li class="list"><a ref="时间线.html">时间线</a></li>
-			<li class="list"><a ref="档案.html">档案</a></li>
-			<li class="list"><a ref="加入我们.html">加入我们</a></li>
+			<li class="list"><a ref="chronology.html">年表</a></li>
+			<li class="list"><a ref="timeline.html">时间线</a></li>
+			<li class="list"><a ref="record.html">记录</a></li>
+			<li class="list"><a ref="connectus.html">联系我们</a></li>
 			<li>世界观</li>
-			<li class="list"><a ref="故事背景.html">故事背景</a></li>
-			<li class="list"><a ref="干员.html">干员</a></li>
-			<li class="list"><a ref="组织.html">组织</a></li>
-			<li class="list"><a ref="地点.html">地点</a></li>
+			<li class="list"><a ref="story.html">故事背景</a></li>
+			<li class="list"><a ref="characters.html">角色</a></li>
+			<li class="list"><a ref="organizations.html">组织</a></li>
+			<li class="list"><a ref="places.html">地点</a></li>
 			<li>作战</li>
-			<li class="list"><a ref="主线.html">主线</a></li>
-			<li class="list"><a ref="物资筹备.html">物资筹备</a></li>
-			<li class="list"><a ref="训练.html">训练</a></li>
-			<li><a ref="道具.html">道具</a></li>
-			<li><a ref="基建.html">基建</a></li>
+			<li class="list"><a ref="mainstory.html">主线</a></li>
+			<li class="list"><a ref="weekly.html">物资筹备</a></li>
+			<li class="list"><a ref="training.html">训练</a></li>
+			<li><a ref="items.html">道具</a></li>
+			<li><a ref="buildings.html">基建</a></li>
 		</ul>
 	</div>
 	<div class="index">
-	  <div class="welcome"><br><br>
+	   <div class="welcome"><br><br>
 			欢迎来到明日方舟Wiki<br><br>
 			<span>本网站是鹰角网络开发的手机游戏<br><img src="../assets/images/logo-game.png"><br>非官方资料站</span><br>
 			<span>本站资料数据仅供参考，一切以最新游戏内容为准</span>
 		</div>
-		<div class="index-middle">FFFFFF</div>
+		<div class="index-middle">
+			<img class="heading-left" src="../assets/images/heading-left.png">
+			<h1 class="index-heading">干员一览</h1>
+			<div id="content">
+				<ul class="class-box">
+					<li class="class"><img class="class" src="../assets/images/sniper.png"></li>
+					<li class="class"><img class="class" src="../assets/images/caster.png"></li>
+					<li class="class"><img class="class" src="../assets/images/pioneer.png"></li>
+					<li class="class"><img class="class" src="../assets/images/guard.png"></li>
+					<li class="class"><img class="class" src="../assets/images/tank.png"></li>
+					<li class="class"><img class="class" src="../assets/images/medic.png"></li>
+					<li class="class"><img class="class" src="../assets/images/supporter.png"></li>
+					<li class="class"><img class="class" src="../assets/images/special.png"></li>
+				</ul>
+				<div class="">
+					<a href="/"><img class="sniper-1" tittle="巡林者" src="../assets/images/portrait/char_503_rang_1-portrait.png"/></a>
+					<a href="/"><img class="sniper-2" src="../assets/images/portrait/char_124_kroos_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-2" src="../assets/images/portrait/char_126_shotst_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-3" src="../assets/images/portrait/char_211_adnach_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-3" src="../assets/images/portrait/char_118_yuki_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-3" src="../assets/images/portrait/char_133_mm_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-4" src="../assets/images/portrait/char_145_prove_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-4" src="../assets/images/portrait/char_129_bluep_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-4" src="../assets/images/portrait/char_158_milu_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-4" src="../assets/images/portrait/char_204_platnm_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-4" src="../assets/images/portrait/char_219_meteo_1-portrait.png" /></a>
+					<a href="/"><img class="sniper-5" src="../assets/images/portrait/char_103_angel_1-portrait.png" /></a>
+				</div>
+				<div class="hide">
+					badworld
+				</div>
+				<div class="hide">
+					hello world2
+				</div>
+				<div class="hide">
+					hello world3
+				</div>
+				<div class="hide">
+					hello world4
+				</div>
+				<div class="hide">
+					hello world5
+				</div>
+				<div class="hide">
+					hello world6
+				</div>
+				<div class="hide">
+					hello world7
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="index-right">
+		<img class="heading-left" src="../assets/images/heading-left.png">
+		<h1 class="index-heading">微博动态</h1>
 		<iframe id="weibo" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=6279793937"></iframe>
 	</div>
 </body>

@@ -74,7 +74,8 @@ li.list>a:active {
 .welcome {
 	background-image: url(../assets/images/banner.png);
 	background-repeat:no-repeat;
-	background-position:center;
+	background-position:top;
+	background-size: cover;
 	height: 705px;
 	color: #FFFFFF;
 	font-family: "Microsoft YaHei";
@@ -94,8 +95,105 @@ span {
 	background-color: #FFFFFF;
 }
 .index-right {
-	background-color: #FFFFFF;
+	background-color: rgba(0,0,0,0);
 	position: absolute;
 	left:81.5%;
 	width:18%
+}
+.heading-left {
+	position: absolute;
+	width: 40px;
+}
+.index-heading {
+	margin: 4px 0 0 0;
+	padding-left: 40px;
+	background: -webkit-linear-gradient(left, #0D0A0A , #424242); 
+	background: -o-linear-gradient(right, #0D0A0A , #424242);
+	background: -moz-linear-gradient(right, #0D0A0A , #424242);
+	background: linear-gradient(to right, #0D0A0A , #424242);
+	color: #FFFFFF;
+	font-family: "Microsoft YaHei";
+	font-size: 30px;
+	text-shadow: 2px 2px 2px #000000;
+}
+.class-box {
+	background: -webkit-linear-gradient(left, #625E5E, #FFFFFF); 
+	background: -o-linear-gradient(right, #625E5E, #FFFFFF);
+	background: -moz-linear-gradient(right, #625E5E, #FFFFFF);
+	background: linear-gradient(to right, #625E5E, #FFFFFF);
+	height: 129px;
+	width: 100%;
+}
+#content ul li {
+	cursor:pointer;
+}
+.hide {
+	display:none;
+}
+li.class {
+	width: 25%;
+	background: rgba(0,0,0,0);
+	display:inline;
+}
+img.class {
+	width: 150px;
+}
+#content div {
+	background-image: url(../assets/images/library-background.png);
+	width: 100%;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+ul.piclist-mainlist {
+	background: -webkit-linear-gradient(left, #625E5E, #FFFFFF); 
+	background: -o-linear-gradient(right, #625E5E, #FFFFFF);
+	background: -moz-linear-gradient(right, #625E5E, #FFFFFF);
+	background: linear-gradient(to right, #625E5E, #FFFFFF);	
+}
+.sniper-1 {
+	background-image: url(../assets/images/library_background-sniper-1.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100%;
+	width: 15%;
+	margin: 2%;
+	box-shadow: 4px 4px 4px #939393;
+}
+.sniper-2 {
+	background-image: url(../assets/images/library_background-sniper-2.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100%;
+	width: 15%;
+	margin: 2%;
+	box-shadow: 4px 4px 4px #939393;
+}
+.sniper-3 {
+	background-image: url(../assets/images/library_background-sniper-3.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100%;
+	width: 15%;
+	margin: 2%;
+	box-shadow: 4px 4px 4px #939393;
+}
+.sniper-4 {
+	background-image: url(../assets/images/library_background-sniper-4.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100%;
+	width: 15%;
+	margin: 2%;
+	box-shadow: 4px 4px 4px #939393;
+}
+.sniper-5 {
+	background-image: url(../assets/images/library_background-sniper-5.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100%;
+	width: 15%;
+	margin: 2%;
+	box-shadow: 4px 4px 4px #939393;
+
 }
